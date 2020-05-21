@@ -27,27 +27,7 @@ In order to build the project there is a `./build.sh` script on the repo root. I
 
 ```
 > sh ./build.sh
--- The C compiler identification is AppleClang 8.0.0.8000042
--- The CXX compiler identification is AppleClang 8.0.0.8000042
--- Check for working C compiler: /Library/Developer/CommandLineTools/usr/bin/cc
--- Check for working C compiler: /Library/Developer/CommandLineTools/usr/bin/cc -- works
--- Detecting C compiler ABI info
--- Detecting C compiler ABI info - done
--- Detecting C compile features
--- Detecting C compile features - done
--- Check for working CXX compiler: /Library/Developer/CommandLineTools/usr/bin/c++
--- Check for working CXX compiler: /Library/Developer/CommandLineTools/usr/bin/c++ -- works
--- Detecting CXX compiler ABI info
--- Detecting CXX compiler ABI info - done
--- Detecting CXX compile features
--- Detecting CXX compile features - done
--- Configuring done
--- Generating done
--- Build files have been written to: REPO_ROOT/CarND-Path-Planning-Project-P1/build
-Scanning dependencies of target path_planning
-[ 50%] Building CXX object CMakeFiles/path_planning.dir/src/main.cpp.o
-[100%] Linking CXX executable path_planning
-[100%] Built target path_planning
+
 ```
 
 The project could be executed directly using `./build/path_planning`
@@ -65,15 +45,8 @@ Now the path planner is running and listening on port 4567 for messages from the
 Click the "Select" button and hope for the best on the highway... well... no really... we are not catching, aren't we?
 At the beginning I did, but now it works!
 
-# [Rubic](https://review.udacity.com/#!/rubrics/1020/view) points
-
 ## Compilation
 
-### The code compiles correctly.
-
-No changes were made in the cmake configuration. A new file was added [src/spline.h](./scr/spline.h). It is the [Cubic Spline interpolation implementation](http://kluge.in-chemnitz.de/opensource/spline/): a single .h file you can use splines instead of polynomials. It was a great suggestion from the classroom QA video. It works great.
-
-## Valid trajectories
 
 ### The car is able to drive at least 4.32 miles without incident.
 I ran the simulator for 15 and 20 miles without incidents:
